@@ -1,0 +1,42 @@
+.wrapper {
+  max-width: 528px;
+  max-height: 265px;
+  margin: 30px auto;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: var(--white-color);
+  position: relative;
+  padding: 40px 70px 40px 70px;
+  z-index: 2;
+}
+.wrapper div {
+  text-align: left;
+  color: var(--primary-color-font);
+  z-index: 1;
+  display: block;
+}
+.wrapper div p {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: var(--font-light);
+  font-stretch: normal;
+  margin: 0;
+}
+
+.wrapper img {
+  height: 117px;
+  position: absolute;
+  top: 31px;
+  left: 31px;
+  z-index: -1;
+}
+@media (max-width: 786px) {
+  .wrapper {
+    width: 100%;
+    max-height: 100%;
+    padding: 40px 45px 40px 70px;
+    text-align: left;
+  }
+  .wrapper p {
+    text-align: left;
+  }
+}

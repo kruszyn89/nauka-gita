@@ -1,0 +1,142 @@
+.backgroundWrapper {
+  background: url('../images/img-02@3x.jpg') no-repeat center;
+  background-size: cover;
+  height: 516px;
+  padding-top: 93px;
+}
+
+.ctaElement {
+  width: 714px;
+  height: 330px;
+  background-color: var(--background-light-blue);
+  margin: auto;
+  display: flex;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.textWrapper {
+  padding: 30px;
+  width: 450px;
+}
+
+.buttonWrapper {
+  width: 244px;
+}
+
+.textWrapper p a {
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: var(--paragraph-main-color);
+}
+
+.textWrapper h2 {
+  font-weight: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.messageIcon {
+  position: relative;
+  z-index: 2;
+  width: 156px;
+  height: 156px;
+  top: 25%;
+  right: 95px;
+  margin-right: 95px;
+}
+
+.imageStyle {
+  width: 249px;
+  height: 330px;
+  position: absolute;
+  z-index: 1;
+}
+
+.imageStyle img {
+  border-radius: 10px 0 0 10px;
+}
+
+.imageStyleMobile {
+  display: none;
+}
+
+.ctaElement img {
+  position: absolute;
+  inset: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 920px) {
+  .messageIcon {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .textWrapper h2 {
+  }
+  .textWrapper {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .ctaElement {
+    width: 100%;
+    max-width: 345px;
+    height: 628px;
+  }
+
+  .backgroundWrapper {
+    height: 820px;
+  }
+  .imageStyle {
+    display: none;
+  }
+  .imageStyleMobile {
+    position: relative;
+    background-size: cover;
+    width: 345px;
+    height: 235px;
+    display: block;
+    margin: 0px auto;
+  }
+
+  .imageStyleMobile img {
+    border-radius: 10px 10px 0 0;
+  }
+  .messageIcon {
+    visibility: visible;
+    width: 104px;
+    height: 104px;
+    left: 50%;
+    margin-left: -52px;
+    top: -52px;
+    right: 0;
+    padding: 0;
+    margin-bottom: -100%;
+  }
+  .textWrapper p:last-of-type {
+    margin-top: 40px;
+  }
+  .buttonWrapper {
+    width: 100%;
+  }
+  .buttonWrapper > button {
+    width: 100%;
+  }
+}

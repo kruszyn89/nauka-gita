@@ -1,0 +1,82 @@
+.iconHover:hover {
+  filter: hue-rotate(-22deg) brightness(163.6%);
+}
+.iconHover {
+  display: none;
+}
+
+.searchDropdown :global(.dropdown-toggle::after) {
+  display: none;
+}
+
+.searchDropdown :global(.dropdown-menu) {
+  min-width: 300px;
+  left: -150px;
+  padding: 15px;
+}
+
+.placeholder {
+  border: 1px var(--divider-color) solid;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder p {
+  margin: 0;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: var(--font-semi-bold);
+}
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px var(--divider-color) solid;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+.searchContainer span {
+  width: 100%;
+  color: var(--primary-color);
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.searchContainer a {
+  font-size: 14px;
+  font-weight: var(--font-semi-bold);
+  line-height: 1.5;
+  color: var(--primary-color);
+  padding: 0px 15px;
+  margin: 0;
+  transition: 0.1s;
+  text-decoration: none;
+  display: inline-block;
+}
+.searchContainer span ~ span {
+  margin-top: 5px;
+}
+
+.searchContainer span:hover {
+  background-color: var(--primary-color);
+}
+.searchContainer span:hover a {
+  color: var(--white-color);
+}
+.loaderContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  .iconHover {
+    display: block;
+  }
+  .mobileTitle {
+    display: none;
+  }
+}

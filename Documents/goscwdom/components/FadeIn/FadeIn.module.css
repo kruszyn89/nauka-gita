@@ -1,0 +1,13 @@
+.root {
+  opacity: 0;
+  transform: translate(0, 10%);
+  visibility: hidden;
+  transition: opacity 300ms ease-out 100ms, transform 300ms ease-out;
+  will-change: opacity, visibility;
+}
+
+.isVisible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}

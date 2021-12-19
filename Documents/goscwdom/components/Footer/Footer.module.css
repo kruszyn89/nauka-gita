@@ -1,0 +1,132 @@
+.root {
+  padding: 80px 0px;
+  background-color: var(--background-dark-blue);
+  color: var(--white-color);
+}
+
+.name,
+.boldName {
+  font-family: 'Nunito';
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.69;
+  letter-spacing: 0.16px;
+  text-align: left;
+  color: #fff;
+}
+.boldName {
+  margin-top: 45px;
+  font-weight: bold;
+}
+.column {
+  padding: 0;
+  margin: 0 30px 0 0;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  height: 80px;
+  align-items: center;
+}
+
+.socialBar {
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: 0.15px;
+  text-align: left;
+  width: 100%;
+  background-color: #231c11;
+  color: var(--white-color);
+}
+
+.iconWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.linkInSection {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 18px;
+}
+
+.aInFooter {
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.69;
+  letter-spacing: 0.16px;
+  text-align: left;
+}
+.arrowContainer {
+  text-align: end;
+}
+.arrowButton:hover {
+  cursor: pointer;
+}
+
+.arrowButton {
+  align-items: center;
+}
+
+.logoComponent {
+  width: 186px;
+}
+.inLine {
+  display: flex;
+  flex-direction: row;
+}
+.inLine img {
+  padding-right: 20px;
+  height: 29px;
+}
+
+@media (max-width: 768px) {
+  .name,
+  .boldName,
+  .column h6 {
+    text-align: center;
+  }
+
+  .column {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .buttonWrapper {
+    display: block;
+    margin: 20px auto 40px auto;
+    width: 90%;
+  }
+  .buttonWrapper button {
+    width: 100%;
+  }
+
+  .arrowContainer {
+    text-align: center;
+  }
+  .socialBar {
+    padding: 0 15px;
+  }
+
+  .iconWrapper a {
+    visibility: hidden;
+  }
+
+  .logoComponent {
+    margin: 0 auto 50px auto;
+  }
+  .subtitle {
+    text-align: left;
+  }
+}

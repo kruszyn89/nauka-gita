@@ -1,0 +1,24 @@
+.container div {
+  padding-top: 40px;
+}
+.container div ul {
+  padding-left: 18px;
+}
+.container li {
+  padding-top: 15px;
+}
+
+.container h4 {
+  color: var(--primary-color-font);
+}
+
+.container p {
+  text-align: left;
+}
+
+.container h3 {
+  text-align: left;
+}
+.container {
+  padding-top: 80px;
+}

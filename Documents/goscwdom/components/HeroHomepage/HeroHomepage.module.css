@@ -1,0 +1,81 @@
+.root {
+  padding: 80px 0px;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.diamond {
+  width: 7px;
+  height: 7px;
+  border: 1px solid #fff;
+  position: absolute;
+  transform: rotate(45deg);
+  margin-left: 3px;
+  left: 0%;
+  bottom: -3px;
+}
+
+.separator {
+  position: relative;
+  margin: 30px auto;
+  width: 1px;
+  height: 1px;
+}
+
+.separator::before,
+.separator::after {
+  display: block;
+  content: '';
+  width: 68px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 0%;
+  bottom: 0;
+}
+.separator::after {
+  transform: translateX(-100%);
+  margin-right: 10px;
+  left: -2px;
+}
+
+.separator::before {
+  margin-left: 16px;
+  /* transform: translateX(100%); */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.35;
+  background-color: #000;
+  z-index: 1;
+}
+
+.top {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.description {
+  margin: 30px 0;
+  font-family: 'Nunito';
+  font-size: 24px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: 0.24px;
+  text-align: center;
+  color: #fff;
+}

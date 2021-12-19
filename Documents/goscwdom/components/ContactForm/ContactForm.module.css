@@ -1,0 +1,59 @@
+.root {
+  margin: 60px 0 0;
+}
+.root h4 {
+  line-height: 1.92;
+  margin-bottom: 20px;
+}
+
+.formLabel {
+  font-weight: var(--font-semi-bold);
+}
+
+.formInput {
+  border: solid 1px #bce0fd;
+  border-radius: 0;
+  height: 50px;
+  font-size: 13px;
+}
+.root :global(.form-control::placeholder) {
+  color: #bce0fd;
+}
+.submitContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 10px;
+}
+.withAsterisk::after {
+  content: '*';
+  color: red;
+  margin-left: 3px;
+}
+.asteriskAnnotation {
+  font-size: 10px;
+  line-height: 2.2;
+  letter-spacing: 0.3px;
+}
+.asteriskAnnotation::before {
+  content: '*';
+  color: red;
+  margin-right: 3px;
+}
+.consents {
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.3px;
+}
+.root :global(input:-internal-autofill-selected) {
+  background-color: none;
+}
+
+.inputGroup select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='currentColor' viewBox='0 0 24 24'><path d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+  background-position-y: 50%;
+}

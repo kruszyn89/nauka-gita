@@ -1,0 +1,51 @@
+.floatingBelowNav {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.breadcrumbLabel {
+  font-size: 12px;
+  line-height: 2.5;
+  text-transform: uppercase;
+  font-weight: var(--font-semi-bold);
+  color: var(--paragraph-main-color);
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+.breadcrumbLink {
+  font-size: 12px;
+  line-height: 2.5;
+  text-transform: uppercase;
+  font-weight: var(--font-semi-bold);
+  color: var(--primary-color);
+  text-decoration: underline;
+  animation: var(--animation);
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.breadcrumbLink:hover {
+  color: var(--secondary-color);
+}
+.breadcrumbArrow {
+  height: 10px;
+  margin: 0 15px 2px;
+}
+.breadcrumbWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .floatingBelowNav {
+    top: 10px;
+  }
+}

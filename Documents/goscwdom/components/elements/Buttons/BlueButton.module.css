@@ -1,0 +1,39 @@
+.primary {
+  height: 47px;
+  padding: 0 30px;
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  text-transform: uppercase;
+  color: var(--primary-color);
+  border-radius: 0;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.85;
+  letter-spacing: 0.65px;
+  text-align: center;
+}
+
+.primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.second {
+  composes: primary;
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.second:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+
+  border-color: var(--primary-color);
+}
+
+.outlined:hover {
+  border-color: var(--secondary-color);
+}

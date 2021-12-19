@@ -1,0 +1,41 @@
+{
+  "name": "codeme",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "classnames": "^2.3.1",
+    "formik": "^2.2.9",
+    "next": "10.2.3",
+    "next-compose-plugins": "^2.2.1",
+    "next-images": "^1.7.0",
+    "normalize.css": "^8.0.1",
+    "prettier": "^2.4.1",
+    "react": "17.0.2",
+    "react-bootstrap": "^1.6.0",
+    "react-dom": "17.0.2",
+    "react-image-lightbox": "^5.1.4",
+    "react-lazyload": "^3.2.0",
+    "react-masonry-css": "^1.0.16",
+    "react-select": "^4.3.1",
+    "react-slick": "^0.28.1",
+    "sharp": "^0.29.1",
+    "slick-carousel": "^1.8.1",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.8",
+    "@types/react-lazyload": "^3.1.1",
+    "@types/react-select": "^4.0.17",
+    "@types/react-slick": "^0.23.4",
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "typescript": "4.3.2"
+  }
+}

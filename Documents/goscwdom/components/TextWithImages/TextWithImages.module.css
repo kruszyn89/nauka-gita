@@ -1,0 +1,197 @@
+.root {
+  padding: 100px 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapperInverted {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.wrapper > *,
+.wrapperInverted > * {
+  flex: 1 1 50%;
+}
+
+.wrapperInverted .textWrapper {
+  margin-left: 103px;
+}
+.wrapper .textWrapper {
+  margin-right: 103px;
+}
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-right: 50px;
+  object-fit: contain;
+}
+
+.imagesWrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.bg,
+.bgInverted {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 58%;
+  background-color: var(--background-primary);
+}
+
+.bg {
+  left: 58%;
+  right: 0%;
+}
+
+.flowerWrapper,
+.flowerWrapperInverted {
+  position: absolute;
+  top: 40px;
+  left: -70px;
+  z-index: 0;
+}
+.flowerWrapper {
+  transform: scaleX(-1);
+  left: auto;
+  right: -70px;
+}
+
+.leavesWrapper,
+.leavesWrapperInverted {
+  position: absolute;
+  bottom: 40px;
+  right: 0px;
+  z-index: 0;
+}
+
+.leavesWrapper {
+  transform: scaleX(-1);
+  left: 0;
+  right: auto;
+}
+.smallImage {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+.smallImage img {
+  width: 249px;
+  height: 235px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px 0 rgba(50, 40, 24, 0.15);
+}
+.wrapperInverted .bigImage {
+  float: right;
+}
+
+.wrapper .bigImage {
+  float: right;
+}
+
+.bigImage {
+  position: relative;
+  display: inline-block;
+}
+
+.bigImage img {
+  width: 342px;
+  height: 364px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px 0 rgba(50, 40, 24, 0.15);
+}
+
+.borderImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  margin-bottom: -30px;
+  margin-left: -30px;
+  display: inline-block;
+  border: solid 1px #b27342;
+  z-index: -1;
+}
+
+@media (max-width: 991px) {
+  .root {
+    padding: 50px 0;
+  }
+  .bg,
+  .bgInverted {
+    display: none;
+  }
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+  .wrapperInverted {
+    flex-direction: column-reverse;
+  }
+  .wrapperInverted .textWrapper,
+  .wrapper .textWrapper {
+    margin-left: 0px;
+  }
+
+  .textWrapper {
+    margin-top: 50px;
+    width: 100% !important;
+  }
+  .imagesWrapper {
+    width: 100% !important;
+  }
+  .mainImage {
+    display: block;
+    margin: 60px auto 0 auto;
+  }
+  .smallImage,
+  .borderImage {
+    display: none;
+  }
+  .bigImage {
+    float: none !important;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+  .bigImage img {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .mainImage {
+    max-width: 344px;
+    width: 100%;
+    height: 100%;
+    max-height: 350px;
+    margin: 40px auto 0 auto;
+  }
+
+  .buttonWrapper > div {
+    margin-top: 40px;
+  }
+  .buttonWrapper {
+    flex-direction: column;
+    margin: 0px;
+  }
+  .buttonWrapper button {
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+
+  .leavesWrapper,
+  .leavesWrapperInverted {
+    opacity: 0.5;
+  }
+}
